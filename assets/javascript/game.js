@@ -1,6 +1,4 @@
-alert("documents state is " + document.readyState);
-
-if (document.readyState === "loading") {		
+document.addEventListener('DOMContentLoaded', function() {		
 //Declare all variables
 var targetLetter = "";
 var letterArray = new Array(26);
@@ -97,4 +95,4 @@ function gameStart() {
 				alert("Invalid Key - Only a ... z valid");
 			} 
 		}
-};
+});
